@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex-flow</title>
     <style>
         .item{
             margin: 5px;
@@ -20,10 +20,16 @@
             border: 1px solid #000;
             
         }
+        .fluxo-horizontal-quebra{
+            flex-flow: row wrap;
+        }
+        .fluxo-horizontal-sem-quebra{
+            flex-flow: row nowrap;
+        }
 
         .flexivel{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
         .horizontal{
             flex-direction: row;
@@ -43,7 +49,7 @@
     </style>
 </head>
 <body>
-    <div class="container flexivel horizontal quebra vertical">
+    <div class="container flexivel fluxo-horizontal-quebra">
         <div class="item">CFB Cursos 1</div>
         <div class="item">CFB Cursos 2</div>
         <div class="item">CFB Cursos 3</div>
